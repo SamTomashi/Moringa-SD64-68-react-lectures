@@ -1,6 +1,4 @@
 function Card(props){
-
-    console.log(props.children);
     return (
         <div className="card" >
             <img src="https://via.placeholder.com/150" className="card-img-top" alt="..."/>
