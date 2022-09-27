@@ -1,6 +1,29 @@
 {
   "items": [
-  
+    {
+      "name": "Sales-Visits",
+      "imageURL": "https://via.placeholder.com/150",
+      "description": "My description",
+      "size": "2",
+      "price": "3",
+      "id": 1
+    },
+    {
+      "name": "Sales-Visits",
+      "imageURL": "https://via.placeholder.com/150",
+      "description": "My description",
+      "size": "2",
+      "price": "3",
+      "id": 2
+    },
+    {
+      "name": "Sales-Visits",
+      "imageURL": "https://via.placeholder.com/150",
+      "description": "My description",
+      "size": "2",
+      "price": "3",
+      "id": 3
+    }
   ],
   "sells": [
     {

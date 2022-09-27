@@ -1,25 +1,31 @@
 import React, {useEffect, useState} from "react";
+import {Routes, Route} from "react-router-dom";
+
 import Card from "./Card";
 import Form from "./Form";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Details from "./Details";
 
 function App() {
   
   const [items, setItems] = useState([]);
 
-  useEffect(()=> {
+  const getItem = () => {
     fetch('http://localhost:3004/items')
     .then(response => response.json())
     .then(data => {
       setItems(()=> data)
       // console.log(items);
     })
+  }
 
+  useEffect(()=> {
+    getItem()
     return function cleanup(){
-      // setItems([])
+      // setItems(()=> [])
     }
-  }, [items])
+  }, [])
 
   const cards = items.map((item, index)=> {
     return <React.Fragment key={index}>
@@ -45,7 +51,12 @@ function App() {
         </div>
       </div>
       <Footer/>
+
+      <Routes>
+        <Route path="/details" element={<Details/>}/>
+      </Routes>
     </div>
+    
   );
 }
 
