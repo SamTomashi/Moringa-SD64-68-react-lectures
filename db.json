@@ -1,14 +1,53 @@
 {
   "items": [
-    { "id": 1, "item-name": "Shirt", "description": "White shirt", "size": "XL", "inclPrice": 700},
-    { "id": 2, "item-name": "Trouser", "description": "Blue Jeans", "size": "34",  "inclPrice": 1200},
-    { "id": 3, "item-name": "T-shirt", "description": "polo ralph lauren", "size": "XXL", "inclPrice": 1200}
-
+    {
+      "id": 1,
+      "item-name": "Shirt",
+      "description": "White shirt",
+      "size": "XL",
+      "inclPrice": 700
+    },
+    {
+      "id": 2,
+      "item-name": "Trouser",
+      "description": "Blue Jeans",
+      "size": "34",
+      "inclPrice": 1200
+    },
+    {
+      "id": 3,
+      "item-name": "T-shirt",
+      "description": "polo ralph lauren",
+      "size": "XXL",
+      "inclPrice": 1200
+    },
+    {
+      "itemName": "Belt",
+      "imageURL": "https://via.placeholder.com/150",
+      "itemDescription": "black",
+      "id": 4
+    },
+    {
+      "itemName": "Skirt",
+      "imageURL": "https://via.placeholder.com/150",
+      "itemDescription": "pink",
+      "id": 5
+    }
   ],
   "sells": [
-    { "id": 1, "date": "13-04-2000", "itemId": 1, "qty": 4, "total-cost": 4567}
+    {
+      "id": 1,
+      "date": "13-04-2000",
+      "itemId": 1,
+      "qty": 4,
+      "total-cost": 4567
+    }
   ],
   "users": [
-      {"id": 1, "username": "Tomashi", "password": "1234"}
+    {
+      "id": 1,
+      "username": "Tomashi",
+      "password": "1234"
+    }
   ]
 }
