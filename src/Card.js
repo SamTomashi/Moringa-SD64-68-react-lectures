@@ -1,6 +1,6 @@
 function Card(props){
     return (
-        <div className="card" >
+        <div className="card m-1" >
             <img src="https://via.placeholder.com/150" className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{props.title}</h5>
@@ -12,5 +12,4 @@ function Card(props){
         </div>
     )
 }
-
 export default Card;
