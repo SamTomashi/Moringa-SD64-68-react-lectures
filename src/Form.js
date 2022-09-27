@@ -1,10 +1,13 @@
 import React, {useEffect, useState} from "react";
 function Form(){
+    
     const [formData, setFormData] = useState({
-        itemName: "",
+        name: "",
         imageURL: "",
-        itemDescription: ""
-    })
+        description: "",
+        size: "",
+        price: 0
+    });
 
     function handleSubmit(event){
         event.preventDefault();
@@ -15,7 +18,6 @@ function Form(){
             },
             body: JSON.stringify(formData),
         });
-          
     }
 
     function handleChange(event){
@@ -29,17 +31,24 @@ function Form(){
         <React.Fragment>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label className="form-label">Item Title</label>
-                    <input onChange={handleChange} value={formData.itemName}  type="text" className="form-control" id="itemName" aria-describedby="emailHelp"/>
-                    <div id="emailHelp" className="form-text">Item Name</div>
+                    <label className="form-label">Title</label>
+                    <input onChange={handleChange} value={formData.name}  type="text" className="form-control" id="name" aria-describedby="itemName"/>
                 </div>
                 <div className="mb-3">
-                    <label  className="form-label">Item Image URL</label>
-                    <input onChange={handleChange} value={formData.imageURL} type="text" className="form-control" id="imageURL" aria-describedby="emailHelp"/>
+                    <label  className="form-label">Image URL</label>
+                    <input onChange={handleChange} value={formData.imageURL} type="text" className="form-control" id="imageURL" aria-describedby="imageURL"/>
                 </div>
                 <div className="mb-3">
-                    <label className="form-label">Item description</label>
-                    <textarea onChange={handleChange} value={formData.itemDescription} className="form-control" id="itemDescription" rows="3"></textarea>
+                    <label className="form-label">Size</label>
+                    <input onChange={handleChange} value={formData.size} type="text" className="form-control" id="size" aria-describedby="size"/>
+                </div>
+                <div className="mb-3">
+                    <label className="form-label">Price</label>
+                    <input onChange={handleChange} value={formData.price} type="number" min="0" className="form-control" id="price" aria-describedby="price"/>
+                </div>
+                <div className="mb-3">
+                    <label className="form-label">Description</label>
+                    <textarea onChange={handleChange} value={formData.description} className="form-control" id="description" rows="3"></textarea>
                 </div>
        
                 <button type="submit" className="btn btn-primary">Submit</button>
