@@ -1,10 +1,15 @@
+import { cleanup } from "@testing-library/react";
 import React, {useEffect, useState} from "react";
 import Card from "./Card";
 import Navbar from "./Navbar";
 
 function App() {
-
+  
   // const [items, setItems] = useState([])
+
+  const [myTimer, setTimer] = useState();
+  const [username, setUsername] = useState("");
+
 
   const items = [
     {
@@ -36,6 +41,20 @@ function App() {
   // }, [])
 
 
+  // console.log(count)
+   function startTimer(){
+    useEffect(()=> {
+      const myTime = new Date().toLocaleString();
+      setTimer(myTime)
+     
+     const myInterval = setInterval(()=> console.log(myTime), 1000);
+     return function cleanup(){
+      clearInterval(myInterval)
+     };
+    })
+   }
+
+
   const cards = items.map((item, index)=> {
     return <React.Fragment key={index}>
               <div className="col-3">
@@ -49,6 +68,8 @@ function App() {
   return (
     <div className="container">
       <Navbar/>
+      <button onClick={()=>  startTimer()}>Get Time</button>
+    
        <div className="row">
         {cards}
       </div>
