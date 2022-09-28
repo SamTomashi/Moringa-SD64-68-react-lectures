@@ -35,12 +35,12 @@ function App() {
   return (
     <div className="container">
       <Navbar/>
-      <Routes>
-        <Route path="/details:id" element={<Details/>}/>
-        <Route exact path="/" element={<NewItem items={items}/>}/>
-      </Routes>
+        <Routes>
+          <Route path="/" element={<NewItem items={items} />}/>
+          <Route path="/item-details" element={<Details/>}/>
+        </Routes>
       <Footer/>
-      
+       
     </div>
     
   );

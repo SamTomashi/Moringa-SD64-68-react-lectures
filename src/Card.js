@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function Card(props){
 
     const deteleItem = (id)=> {
@@ -20,7 +22,7 @@ function Card(props){
                 <div>
                     <button className="btn btn-sm btn-danger my-3 mx-auto" onClick={()=> deteleItem(props.id)}>Delete</button>
                 </div>
-                {props.children}
+                <Link to="/item-details">View Details</Link>
             </div>
         </div>
     )

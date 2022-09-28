@@ -1,6 +1,6 @@
 function Footer(){
     return (
-        <div className="fixed-bottom">Mashwear LTD</div>
+        <div className="fixed-bottom">Mashwear Fashion</div>
     )
 }
 

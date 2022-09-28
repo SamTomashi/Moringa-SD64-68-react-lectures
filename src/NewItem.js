@@ -8,9 +8,7 @@ function NewItem({items}){
     const cards = items.map((item, index)=> {
         return <React.Fragment key={index}>
                   <div className="col-3">
-                      <Card imageURL={item.imageURL} id={item.id} title={item.name} description={item.description} price={item.price}>
-                        <Link to="/details">View Details</Link>
-                      </Card>
+                      <Card imageURL={item.imageURL} id={item.id} title={item.name} description={item.description} price={item.price}/>
                   </div>
             </React.Fragment>
       })
