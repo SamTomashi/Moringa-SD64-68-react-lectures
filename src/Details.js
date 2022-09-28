@@ -1,6 +1,6 @@
 function Details(){
     return (
-        <div>
+        <div className="my-4 p-4">
             App details
         </div>
     )

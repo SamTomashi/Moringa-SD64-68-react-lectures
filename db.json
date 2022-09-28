@@ -1,39 +1,31 @@
 {
   "items": [
     {
-      "name": "Sales-Visits",
+      "name": "Trouser",
       "imageURL": "https://via.placeholder.com/150",
-      "description": "My description",
-      "size": "2",
-      "price": "3",
-      "id": 1
-    },
-    {
-      "name": "Sales-Visits",
-      "imageURL": "https://via.placeholder.com/150",
-      "description": "My description",
-      "size": "2",
-      "price": "3",
+      "description": "Khaki Trouser",
+      "size": "32",
+      "price": "1500",
       "id": 2
     },
     {
-      "name": "Sales-Visits",
-      "imageURL": "https://via.placeholder.com/150",
-      "description": "My description",
-      "size": "2",
-      "price": "3",
+      "name": "t-shirt",
+      "imageURL": "https://via.placeholder.com/300",
+      "description": "Polo",
+      "size": "XXL",
+      "price": "3500",
       "id": 3
-    }
-  ],
-  "sells": [
+    },
     {
-      "id": 1,
-      "date": "13-04-2000",
-      "itemId": 1,
-      "qty": 4,
-      "total-cost": 4567
+      "name": "t-shirt",
+      "imageURL": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80",
+      "description": "Polo",
+      "size": "XXL",
+      "price": "3500",
+      "id": 4
     }
   ],
+  "sells": [],
   "users": [
     {
       "id": 1,

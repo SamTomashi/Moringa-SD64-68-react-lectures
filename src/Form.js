@@ -51,7 +51,8 @@ function Form(){
                     <textarea onChange={handleChange} value={formData.description} className="form-control" id="description" rows="3"></textarea>
                 </div>
        
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Add New Item</button>
+                
             </form>
         </React.Fragment>
     )
